@@ -2,6 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .top-nav{
     background-color: #f3f3f3;
     padding:10px;
@@ -228,7 +232,12 @@ html{
     }
 
     .stitching,.fabrics{
-        height: 300px;
+        width: 500px;
+        margin-bottom: 5px;
+    }
+
+    .container{
+        max-width: max-content;
     }
 
     .btn-about {
@@ -236,9 +245,14 @@ html{
         height: 25px;
         padding: 3px;
     }
+
+    h1{
+        font-size: revert;
+    }
+
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
     .nav-item{
         padding: 0px;
         text-align: center;
@@ -250,16 +264,6 @@ html{
 
     .nav-link{
         font-size: 10px;
-    }
-
-    .parallex-div {
-        background: url("../assets/images/bgmob.jpg") !important;
-        background-repeat:no-repeat !important; 
-        background-attachment:fixed !important;
-        background-size:cover !important;
-        background-position: center !important; 
-        overflow: hidden !important;
-        height: 700px;
     }
 
     .fabrics{
@@ -274,13 +278,17 @@ html{
         text-align: center !important;
     }
 
-    .catalogue_carousel{
-        margin-left:35px;
-        margin-top:10px;
+    .about-img{
+        height: 200px;
+        width: 220px;
     }
 
-    .display-5 > a {
-        margin-right: 25px;
-        font-size: 20px;
+    .setting{
+        height: 300px !important;
     }
+
+    h1{
+        font-size: revert;
+    }
+
 }
