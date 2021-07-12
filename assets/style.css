@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -236,8 +237,8 @@ body{
         margin-bottom: 5px;
     }
 
-    .container{
-        max-width: max-content;
+    .cont-2{
+        text-align: center;
     }
 
     .btn-about {
